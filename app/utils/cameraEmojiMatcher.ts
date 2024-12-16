@@ -34,13 +34,13 @@ function startEmojiInterval() {
     if (!isIdle && isPageActive && !permanentBlock && !isProcessingEmoji) {
       await captureAndMatchEmoji();
       if (!permanentBlock) {
-        emojiInterval = window.setTimeout(intervalFunction, 12000); // Schedule next execution after 12 seconds
+        emojiInterval = window.setTimeout(intervalFunction, 11000); // Schedule next execution after 11 seconds
       }
     }
   };
 
   // Start the first interval
-  emojiInterval = window.setTimeout(intervalFunction, 12000);
+  emojiInterval = window.setTimeout(intervalFunction, 11000);
 }
 
 // Stop periodic emoji matching
