@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import EmojiDisplay from "@/components/ui/EmojiDisplay"; // Import the EmojiDisplay component
 import ShimmerBackground from "@/components/ui/ShimmerBackground"; // Import ShimmerBackground component
 import DisclaimerNotice from "@/components/ui/DisclaimerNotice"; // Import the DisclaimerNotice component
@@ -25,6 +26,9 @@ export default function Home() {
 
       {/* DisclaimerNotice component placed at the bottom of the page */}
       <DisclaimerNotice />
+
+      {/* Vercel Analytics Component */}
+      <Analytics />
     </ShimmerBackground>
   );
 }
