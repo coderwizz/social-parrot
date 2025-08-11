@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* App Explanation Text */}
         <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center mt-2 text-white">
-          Squawk! I'm SocialParrot. Every 8-16 seconds I shapeshift into a different emoji based on camera input from your computer.
+          Squawk! I'm SocialParrot. Every 8-15 seconds I shapeshift into a different emoji based on camera input from your computer.
         </div>
       </div>
 
