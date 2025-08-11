@@ -29,18 +29,18 @@ export async function init(callback: (emoji: string) => void) {
 function startEmojiInterval() {
   if (emojiInterval !== null) return;
 
-  // Define the function to run every 12.5 seconds
+  // Define the function to run every 7.5 seconds
   const intervalFunction = async () => {
     if (!isIdle && isPageActive && !permanentBlock && !isProcessingEmoji) {
       await captureAndMatchEmoji();
       if (!permanentBlock) {
-        emojiInterval = window.setTimeout(intervalFunction, 11000); // Schedule next execution after 11 seconds
+        emojiInterval = window.setTimeout(intervalFunction, 7500); // Schedule next execution after 7.5 seconds
       }
     }
   };
 
   // Start the first interval
-  emojiInterval = window.setTimeout(intervalFunction, 11000);
+  emojiInterval = window.setTimeout(intervalFunction, 7500);
 }
 
 // Stop periodic emoji matching
